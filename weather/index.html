@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <form id="form" action="">
+          <input type="text" id="citySearch" name="query" value="San Francisco, California" placeholder="Enter City">
+          <button name="submit" id="search">🔍</button>
+          <div>
+            <input type="radio" checked name="units" class="units" id="celsius" value="metric">
+            <label for="celsius">℃</label>
+            <input type="radio" name="units" class="units" id="fahrenheit" value="imperial">
+            <label for="fahrenheit">℉</label>
+          </div>
+        </form>
+      </div>
+        <div class="currentWeather">
+          <div id="city"></div>
+          <div id="country"></div>
+          <img id="weatherIcon" class="weatherInfo thirdCol" src=""></img>
+          <div id="weatherDesc" class="weatherInfo thirdCol"></div>
+          <div id="temp" class="weatherInfo firstCol"><span class="tempUnits"></span></div>
+          <div id="feelsLike" class="weatherInfo firstCol"><span class="tempUnits"></span></div>
+          <div id="dewPoint" class="weatherInfo secondCol"><span class="tempUnits"></span></div>
+          <div id="humidity" class="weatherInfo secondCol"></div>
+          <div id="UV" class="weatherInfo firstCol"></div>
+          <div id="precipitation" class="weatherInfo secondCol"></div>
+          <div id="sunrise" class="weatherInfo firstCol"></div>
+          <div id="sunset" class="weatherInfo secondCol"></div>
+        </div>
+        <div id="forecastWeather">
+          <div id="day1" class="day">
+            <li class="date"></li>
+            <li class="maxTemp"></li>
+            <li class="minTemp"></li>
+            <img class="icon" src=""></img>
+            <li class="description"></li>
+          </div>
+          <div id="day2" class="day">
+            <li class="date"></li>
+            <li class="maxTemp"></li>
+            <li class="minTemp"></li>
+            <img class="icon" src=""></img>
+            <li class="description"></li>
+          </div>
+          <div id="day3" class="day">
+            <li class="date"></li>
+            <li class="maxTemp"></li>
+            <li class="minTemp"></li>
+            <img class="icon" src=""></img>
+            <li class="description"></li>
+          </div>
+          <div id="day4" class="day">
+            <li class="date"></li>
+            <li class="maxTemp"></li>
+            <li class="minTemp"></li>
+            <img class="icon" src=""></img>
+            <li class="description"></li>
+          </div>
+          <div id="day5" class="day">
+            <li class="date"></li>
+            <li class="maxTemp"></li>
+            <li class="minTemp"></li>
+            <img class="icon" src=""></img>
+            <li class="description"></li>
+          </div>
+          <div id="day6" class="day">
+            <li class="date"></li>
+            <li class="maxTemp"></li>
+            <li class="minTemp"></li>
+            <img class="icon" src=""></img>
+            <li class="description"></li>
+          </div>
+          <div id="day7" class="day">
+            <li class="date"></li>
+            <li class="maxTemp"></li>
+            <li class="minTemp"></li>
+            <img class="icon" src=""></img>
+            <li class="description"></li>
+          </div>
+        </div>
+      <footer id="footer">
+        <div id="footDiv">
+        </div>
+        <a href="http:\\www.github.com/natecard"><img src="./images/github-mark-white.svg" viewBox="0 0 60 55" width="25" height="25" alt="github" ></a>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
